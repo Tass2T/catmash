@@ -1,0 +1,27 @@
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1;
+}
+
+#main > div {
+    height: 100%;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cat-left {
+    background-color: #ECF0F1;
+}
+
+#cat-right {
+    background-color: #F7F7F7;
+}
+
+.catImage {
+    width: 300px;
+}
