@@ -14,6 +14,14 @@
     align-items: center;
 }
 
+#app_title {
+    position: absolute;
+    font-size: 4rem;
+    color: rgb(54, 81, 101);
+    left: calc(50vw - 150px);
+    top: 70px;
+}
+
 #cat-left {
     background-color: #ECF0F1;
 }
@@ -23,5 +31,19 @@
 }
 
 .catImage {
-    width: 300px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 10px solid white;
+}
+
+.catImage:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.catImage:active {
+    opacity: 0.5;
 }

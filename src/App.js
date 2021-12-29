@@ -8,6 +8,7 @@ import List from './components/List';
 function App() {
 
   const [data, setData] = useState(false)
+  const [count, setCount] = useState(0)
 
   const fetchCatData = () => {
     axios.get("https://latelier.co/data/cats.json")
@@ -23,7 +24,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home data={data} setData={setData} />}/>
+            <Route path="/" element={<Home data={data} setData={setData} count={count} setCount={setCount} />}/>
             <Route path="/list" element={<List/>}/>
         </Routes>
       </BrowserRouter>
