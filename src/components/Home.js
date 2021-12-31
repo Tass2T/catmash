@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react/cjs/react.development'
-import './home.css'
 
 export default function Home({ data, setData, count, setCount }) {
 
@@ -21,7 +20,7 @@ export default function Home({ data, setData, count, setCount }) {
     const handleImageClick = (number) => {
         setCount(count + 1)
         const newData = data;
-        newData.find(x => x.id == number).nbVote++
+        newData.find(x => x.id == number).vote++
         setData(newData)
     }
 
