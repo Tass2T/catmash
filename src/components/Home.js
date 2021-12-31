@@ -9,10 +9,10 @@ export default function Home({ data, setData, count, setCount }) {
     const [secondImage, setSecondImage] = useState(false)
 
     const setRandomImage = () => {
-        let randomKey = Math.round(Math.random() * data.length)
+        let randomKey = Math.round(Math.random() * data.length - 1)
         setFirstImage(data[randomKey])
         setFirstImage(firstImage => ({...firstImage, key : randomKey}))
-        randomKey = Math.round(Math.random() * data.length)
+        randomKey = Math.round(Math.random() * data.length - 1)
         setSecondImage(data[randomKey])
         setSecondImage(secondImage => ({...secondImage, key: randomKey}))
     }
