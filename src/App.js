@@ -7,12 +7,19 @@ import List from './components/List';
 
 function App() {
 
-  const [data, setData] = useState(false)
+  const [data, setData] = useState([])
   const [count, setCount] = useState(0)
+
+  const initVoteAttribute = (data) => {
+      data.forEach(element => {
+        element.vote = 0
+      });
+      setData(data)
+  }
 
   const fetchCatData = () => {
     axios.get("https://latelier.co/data/cats.json")
-    .then(res => setData(res.data.images))
+    .then(res => initVoteAttribute(res.data.images))
     .catch(err => console.warn(err))
   }
 
@@ -25,7 +32,7 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home data={data} setData={setData} count={count} setCount={setCount} />}/>
-            <Route path="/list" element={<List/>}/>
+            <Route path="/list" element={<List data={data}/>}/>
         </Routes>
       </BrowserRouter>
     </div>

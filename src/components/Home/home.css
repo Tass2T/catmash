@@ -41,7 +41,7 @@
 .catImage:hover {
     opacity: 0.8;
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .catImage:active {

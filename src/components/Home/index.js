@@ -21,7 +21,7 @@ export default function Home({ data, setData, count, setCount }) {
     const handleImageClick = (number) => {
         setCount(count + 1)
         const newData = data;
-        newData.find(x => x.id == number).nbVote ? newData.find(x => x.id == number).nbVote++ : newData.find(x => x.id == number).nbVote = 1
+        newData.find(x => x.id == number).nbVote++
         setData(newData)
     }
 
