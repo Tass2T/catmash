@@ -143,6 +143,12 @@
     flex-direction: column;
   }
 
+  #main > h2 {
+    top: 120px;
+    font-size: 15px;
+    left: calc(50vw - 167px);
+  }
+
   #app_title {
     font-size: 3rem;
     left: calc(50vw - 120px);
