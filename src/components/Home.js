@@ -1,6 +1,5 @@
-import { useEffect } from 'react'
+import { useEffect, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useState } from 'react/cjs/react.development'
 
 export default function Home({ data, setData, count, setCount }) {
 
