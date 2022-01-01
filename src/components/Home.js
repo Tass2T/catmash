@@ -30,6 +30,7 @@ export default function Home({ data, setData, count, setCount }) {
     return (
         <div id="main">
             <h1 id="app_title">CATMASH</h1>
+            <h2>Cliquez pour voter pour le chat le plus mignon!</h2>
             {firstImage && <div id="cat-left">
                 <img className='catImage' src={firstImage.url} onClick={() => handleImageClick(firstImage.id)} alt="first random cat"/>
             </div>}

@@ -39,12 +39,19 @@
   flex: 50%;
 }
 
+#main > h2 {
+  position: absolute;
+  color: rgb(54, 81, 101);
+  top: 200px;
+  left: calc(50vw - 250px);
+}
+
 #app_title {
   position: absolute;
   font-size: 4rem;
   color: rgb(54, 81, 101);
   left: calc(50vw - 150px);
-  top: 70px;
+  top: 60px;
 }
 
 #cat-left {
