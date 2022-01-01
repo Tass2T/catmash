@@ -37,7 +37,7 @@ export default function Home({ data, setData, count, setCount }) {
             {secondImage && <div id="cat-right">
                 <img className='catImage' src={secondImage.url} onClick={() => handleImageClick(secondImage.id)}  alt="second random cat"/>
             </div>}
-            <Link to="list" style={{textDecoration:"none", color:"#365165"}}>
+            <Link to="list" className='link'>
                 <div className='page_link'>
                     <p>VOIR LES PLUS BEAUX CHATS </p>
                     <p>{count} votes</p>
