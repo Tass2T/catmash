@@ -20,7 +20,7 @@ export default function Home({ data, setData, count, setCount }) {
     const handleImageClick = (number) => {
         setCount(count + 1)
         const newData = data;
-        newData.find(x => x.id == number).vote++
+        newData.find(x => x.id === number).vote++
         setData(newData)
     }
 
@@ -32,10 +32,10 @@ export default function Home({ data, setData, count, setCount }) {
         <div id="main">
             <h1 id="app_title">CATMASH</h1>
             {firstImage && <div id="cat-left">
-                <img className='catImage' src={firstImage.url} onClick={() => handleImageClick(firstImage.id)} alt="first random cat image"/>
+                <img className='catImage' src={firstImage.url} onClick={() => handleImageClick(firstImage.id)} alt="first random cat"/>
             </div>}
             {secondImage && <div id="cat-right">
-                <img className='catImage' src={secondImage.url} onClick={() => handleImageClick(secondImage.id)}  alt="second random cat image"/>
+                <img className='catImage' src={secondImage.url} onClick={() => handleImageClick(secondImage.id)}  alt="second random cat"/>
             </div>}
             <div className='page_link'>
                 <Link to="list"><p>VOIR LES PLUS BEAUX CHATS </p></Link>
