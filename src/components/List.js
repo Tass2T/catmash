@@ -14,7 +14,6 @@ export default function List ({data}) {
             </div>    
             )}
             <Link to="/" className="back_link"><i className="fas fa-arrow-left"></i>Retour aux votes</Link>
-        
         </div>
     )
 }
