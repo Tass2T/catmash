@@ -54,14 +54,16 @@
   position: absolute;
   color: var(--text-primary-color);
   top: 200px;
-  left: calc(50vw - 250px);
+  text-align: center;
+  width: 100%;
 }
 
 #app_title {
   position: absolute;
   font-size: 4rem;
   color: var(--text-primary-color);
-  left: calc(50vw - 150px);
+  width: 100%;
+  text-align: center;
   top: 60px;
 }
 
@@ -166,12 +168,10 @@
   #main > h2 {
     top: 120px;
     font-size: 15px;
-    left: calc(50vw - 167px);
   }
 
   #app_title {
     font-size: 3rem;
-    left: calc(50vw - 120px);
     top: 40px;
   }
 
@@ -236,11 +236,35 @@
     #app_title {
       position: absolute;
       font-size: 2rem;
-      left: calc(50vw - 79px);
       top: 20px;
     }
 
     #main > h2 {
       top: 70px;
     }
+}
+
+@media screen and (max-height: 670px) {
+  .catImage {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .catImage {
+    width: 140px;
+    height: 140px;
+  }
+
+  #main > h2 {
+     font-size: 12px;
+  }
+
+  #cat-left {
+    padding-bottom: 1rem;
+  }
+  #cat-right {
+    padding-top: 1rem;
+  }
 }
