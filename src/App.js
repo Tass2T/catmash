@@ -27,12 +27,6 @@ function App() {
     fetchCatData()
   }, [])
 
-  useEffect(() => {
-    let sortedData = data
-    sortedData.sort((a,b) => a.vote < b.vote ? 1 : -1)
-    setData(sortedData)
-  }, [count])
-
   return (
     <div className="App">
       <BrowserRouter>
