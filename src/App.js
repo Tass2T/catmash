@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import cats from './cats.json'
 import Home from './components/Home';
 import List from './components/List';
 
@@ -18,9 +19,10 @@ function App() {
   }
 
   const fetchCatData = () => {
-    axios.get("https://latelier.co/data/cats.json", {crossdomain: true})
-    .then(res => initVoteAttribute(res.data.images))
-    .catch(err => console.warn(err))
+    initVoteAttribute(cats.images)
+    // axios.get("https://latelier.co/data/cats.json")
+    // .then(res => initVoteAttribute(res.data.images))
+    // .catch(err => console.warn(err))
   }
 
   useEffect(() => {
