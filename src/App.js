@@ -18,7 +18,7 @@ function App() {
   }
 
   const fetchCatData = () => {
-    axios.get("https://latelier.co/data/cats.json")
+    axios.get("https://latelier.co/data/cats.json", {crossdomain: true})
     .then(res => initVoteAttribute(res.data.images))
     .catch(err => console.warn(err))
   }
