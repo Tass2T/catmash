@@ -13,7 +13,7 @@ export default function List ({data}) {
                 <img className='catImage list_image' src={item.url} loading="lazy" alt="list of cats"></img>
             </div>    
             )}
-            <Link to="/" className="back_link"><i className="fas fa-arrow-left"></i>Retour aux votes</Link>
+            <Link to="/" className="back_link"><i className="fas fa-arrow-left"></i>RETOUR AUX VOTES</Link>
         </div>
     )
 }
